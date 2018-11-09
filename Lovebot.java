@@ -14,22 +14,27 @@ public class Lovebot {
 		
 		for(int i = 1; i > 0; i++) {
 		System.out.print("You: ");
-			String user = s.nextLine();
+			 String user = s.nextLine().toLowerCase();
 				
-			if (user.contains("hey") || user.contains("hello") || user.contains("hi") || user.contains("who") || user.contains("hola")) {
+			if (user.startsWith("hey") || user.startsWith("hello") || user.startsWith("hi") || user.startsWith("who") || user.startsWith("hola")) {
 				botSay("Hey there! How can I help you?");
-			} else if (user.contains("crush") || user.contains("approach") || user.contains("like") || user.contains("talk") || user.contains("want") || user.contains("feelings") || user.contains("scared") || user.contains("afraid") || user.contains("too good") || user.contains("league")) {
+			} else if (user.contains("crush") || user.contains("approach") || user.contains("lik") || user.contains("talk") || user.contains("want") || user.contains("feeling") || user.contains("scar") || user.contains("afraid") || user.contains("too good") || user.contains("league")) {
 				botSay("Don’t be afraid to approach them! The worst is rejection and you move on with life." + "\n" + "Anything else?");
-			} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leave") || user.contains("abuse") || user.contains("toxic") || user.contains("ignore") || user.contains("mad") || user.contains("angry")) {
+			} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leav") || user.contains("abus") || user.contains("toxic") || user.contains("ignor") || user.contains("mad") || user.contains("angr") || user.contains("break")) {
 				botSay("Leave them behind! Nobody deserves to be treated like that." + "\n" + "Anything else?");
-			} else if (user.contains("better") || user.contains("improve") || user.contains("strengthen") || user.contains("bond") || user.contains("closer") || user.contains("make up") || user.contains("distant") || user.contains("apart")) {
+			} else if (user.contains("better") || user.contains("improv") || user.contains("strengthen") || user.contains("bond") || user.contains("close") || user.contains("make up") || user.contains("distan") || user.contains("apart")) {
 				botSay("Communication is key." + "\n" +"Anything else?");
 			} else if (user.contains("ex")) {
 				botSay("Stop talking to them. There’s a reason why you aren’t together anymore." + "\n" + "Anything else?");
-			} else if (user.contains("first") || user.contains("date") || user.contains("where") || user.contains("out") || user.contains("eat") || user.contains("food") || user.contains("place") || user.contains("special")) {
+			} else if (user.contains("first") || user.contains("dat") || user.contains("where") || user.contains("out") || user.contains("eat") || user.contains("food") || user.contains("place") || user.contains("special")) {
 				botSay("Movies, Golf, Chipotle, Mall, Park, Walmart. Your choice." + "\n" + "Anything else?");
 			} else if (user.contains("ok") || user.contains("okay") || user.contains("thank you") || user.contains("thanks") || user.contains("oh") || user.contains("thx")) {
 				botSay("No problem!" + "\n" + "Anything else?");
+			} else if (user.contains("no") || user.contains("nah") || user.contains("naw") || user.contains("nope")) {
+				botSay("Okay. Say \"end chat\" to close this chat");
+			} else if (user.contains("end chat") || user.contains("endchat")) {
+				botSay("Goodbye!");
+				System.exit(0);
 			} else {
 				botSay("Sorry didn't get that. Try again");
 			}
