@@ -1,0 +1,36 @@
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+public class Gifts extends botLogic{
+	
+	public Gifts() {
+		
+	}
+	public void whatMonth() {
+		SimpleDateFormat s = new SimpleDateFormat("MM");
+		Date d = new Date();
+		String m = (s.format(d));
+		
+		if (m.equals("3") || m.equals("4") || m.equals("5")) {
+			Spring();
+		} else if (m.equals("6") || m.equals("7") || m.equals("8")) {
+			Summer();
+		} else if (m.equals("9") || m.equals("10") || m.equals("11")) {
+			Fall();
+		} else if (m.equals("12") || m.equals("1") || m.equals("2")) {
+			Winter();
+		}
+	}
+	public void Spring() {
+		botSay("Get him/her a nice lightweight T-Shirt");
+	}
+	public void Summer() {
+		botSay("Get him/her a swim suit...then a trip to the beach");
+	}
+	public void Fall() {
+		botSay("Get him/her a cozy hoodie. It's cuddling season.");
+	}
+	public void Winter() {
+		botSay("Get him/her a big fuzzy blanket");
+	}
+}
