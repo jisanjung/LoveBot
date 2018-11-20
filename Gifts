@@ -11,13 +11,13 @@ public class Gifts extends botLogic{
 		Date d = new Date();
 		String m = (s.format(d));
 		
-		if (m.equals("3") || m.equals("4") || m.equals("5")) {
+		if (m.equals("03") || m.equals("04") || m.equals("05")) {
 			Spring();
-		} else if (m.equals("6") || m.equals("7") || m.equals("8")) {
+		} else if (m.equals("06") || m.equals("07") || m.equals("08")) {
 			Summer();
-		} else if (m.equals("9") || m.equals("10") || m.equals("11")) {
+		} else if (m.equals("09") || m.equals("10") || m.equals("11")) {
 			Fall();
-		} else if (m.equals("12") || m.equals("1") || m.equals("2")) {
+		} else if (m.equals("12") || m.equals("01") || m.equals("02")) {
 			Winter();
 		}
 	}
