@@ -15,6 +15,7 @@ public class botLogic {
 	public void logic() {
 		HiBye hb = new HiBye();
 		Gifts g = new Gifts();
+		Responses r = new Responses();
 		
 		System.out.print("You: ");
 			String user = s.nextLine().toLowerCase();
@@ -27,21 +28,21 @@ public class botLogic {
 		if (user.startsWith("hey") || user.startsWith("hello") || user.startsWith("hi") || user.startsWith("who") || user.startsWith("hola")) {
 			hb.greet();
 		} else if (user.contains("crush") || user.contains("approach") || user.contains("talk") || user.contains("want") || user.contains("feeling") || user.contains("scar") || user.contains("afraid") || user.contains("too good") || user.contains("league")) {
-			botSay("Don’t be afraid to approach them! The worst is rejection and you move on with life." + "\n" + "Anything else?");
-		} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leav") || user.contains("abus") || user.contains("toxic") || user.contains("ignor") || user.contains("mad") || user.contains("angr") || user.contains("break")) {
-			botSay("Leave them behind! Nobody deserves to be treated like that." + "\n" + "Anything else?");
+			r.crush();
+		} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leav") || user.contains("abus") || user.contains("toxic") || user.contains("ignor") || user.contains("mad") || user.contains("angr") || user.contains("break") || user.contains("hates"))  {
+			r.hurt();
 		} else if (user.contains("better") || user.contains("improv") || user.contains("strengthen") || user.contains("bond") || user.contains("close") || user.contains("make up") || user.contains("distan") || user.contains("apart")) {
 			botSay("Communication is key." + "\n" +"Anything else?");
 		} else if (user.contains("ex")) {	
 			botSay("Stop talking to your " + su.appendIfMissing(user, " girlfriend/boyfriend") + ". There’s a reason why you aren’t together anymore." + "\n" + "Anything else?");
 		} else if (user.contains("likes me") || user.contains("like me")) {
-			botSay("They will most likely talk a lot or make lots of eye contact");
+			r.like();
 		} else if (user.contains("first") || user.contains("date") || user.contains("where") || user.contains("out") || user.contains("eat") || user.contains("food") || user.contains("place") || user.contains("special")) {
-			botSay("Movies, Golf, Chipotle, Mall, Park, Walmart. Your choice." + "\n" + "Anything else?");
+			r.first();
 		} else if (user.contains("gift") || user.contains("present")) {
 			g.whatMonth();
 		} else if (user.contains("ok") || user.contains("okay") || user.contains("thank you") || user.contains("thanks") || user.contains("oh") || user.contains("thx")) {
-			botSay("No problem!" + "\n" + "Anything else?");
+			r.thanks();
 		} else if (user.contains("yes") || user.contains("yea") || user.contains("yep") || user.contains("yup") || user.contains("ya")) {
 			botSay("How can I help you?");
 		} else if (user.contains("no") || user.contains("nah") || user.contains("naw") || user.contains("nope")) {
@@ -49,7 +50,7 @@ public class botLogic {
 		} else if (user.contains("end chat") || user.contains("endchat")) {
 			hb.endChat();
 			} else {
-				botSay("Sorry didn't get that. Try again.");
+				r.error();
 			}
 		}
 	}
