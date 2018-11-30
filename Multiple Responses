@@ -1,0 +1,66 @@
+public class Responses extends botLogic{
+
+	private int decider = (int) (Math.random() * 2 + 1);
+	
+	public void crush() {
+
+		if (decider == 1) {
+			botSay("Don’t be afraid to approach them! The worst is rejection and you move on with life." + "\n" + "Anything else?");
+		} else if (decider == 2) {
+			botSay("Be straight up and go up to them with confidence." + "\n" + "Anything else?");
+		}
+	}
+	public void hurt() {
+
+		if (decider == 1) {
+			botSay("Leave them behind! Nobody deserves to be treated like that." + "\n" + "Anything else?");
+		} else if (decider == 2) {
+			botSay("You desereve better! Cut them off." + "\n" + "Anything else?");
+		}
+	}
+	public void improve() {
+		
+		if (decider == 1) {
+			botSay("Communication is key." + "\n" +"Anything else?");
+		} else if (decider == 2) {
+			botSay("Set goals for yourselves." + "\n" + "Anything else?");
+		}
+	}
+	public void like() {
+		
+		if (decider == 1) {
+			botSay("They will most likely talk a lot or make lots of eye contact");
+		} else if (decider == 2) {
+			botSay("Look out for body language." + "\n" + "Anything else?");
+		}
+	}
+	public void first() {
+		
+		if (decider == 1) {
+			botSay("Movies, Golf, Chipotle, Mall, Park, Walmart. Your choice." + "\n" + "Anything else?");
+		} else if (decider == 2) {
+			botSay("Cheesecake Factory." + "\n" + "Anything else?");
+		}
+	}
+	public void thanks() {
+		
+		if (decider == 1) {
+			botSay("No problem!" + "\n" + "Anything else?");
+		} else if (decider == 2) {
+			botSay("Sure." + "\n" + "Anything else?");
+		}
+	}
+	public void error() {
+		decider = (int) (Math.random() * 4 + 1);
+		
+		if (decider == 1) {
+			botSay("Sorry didn't get that. Try again.");
+		} else if (decider == 2) {
+			botSay("What's that?");
+		} else if (decider == 3) {
+			botSay("Huh?");
+		} else if (decider == 4) {
+			botSay("Couldn't understand. Try again.");
+		}
+	}
+}
