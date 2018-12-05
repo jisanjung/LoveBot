@@ -29,16 +29,30 @@ public class botLogic {
 			hb.greet();
 		} else if (user.contains("crush") || user.contains("approach") || user.contains("talk") || user.contains("want") || user.contains("feeling") || user.contains("scar") || user.contains("afraid") || user.contains("too good") || user.contains("league")) {
 			r.crush();
-		} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leav") || user.contains("abus") || user.contains("toxic") || user.contains("ignor") || user.contains("mad") || user.contains("angr") || user.contains("break") || user.contains("hates"))  {
+		} else if (user.contains("nerv") || user.contains("giddy") || user.contains("idiot") || user.contains("butterflies") || user.contains("sick")) {
+			r.nervous();
+		} else if (user.contains("cheat") || user.contains("broke up") || user.contains("heartbroken") || user.contains("hurt") || user.contains("left") || user.contains("leav") || user.contains("toxic") || user.contains("ignor") || user.contains("mad") || user.contains("angr") || user.contains("break") || user.contains("hates"))  {
 			r.hurt();
+		} else if (user.contains("abus") || user.contains("hit") || user.contains("pain") || user.contains("scar") || user.contains("kick") || user.contains("punch")) {
+			r.abuse();
+		} else if (user.contains("murder") || user.contains("death") || user.contains("rape") || user.contains("victim") || user.contains("assault")) {
+			r.murder();
 		} else if (user.contains("better") || user.contains("improv") || user.contains("strengthen") || user.contains("bond") || user.contains("close") || user.contains("make up") || user.contains("distan") || user.contains("apart")) {
-			botSay("Communication is key." + "\n" +"Anything else?");
+			r.improve();
+		} else if (user.contains("horoscope") || user.contains("magic") || user.contains("crystal") || user.contains("stars") || user.contains("zodiac")) {
+			r.horoscope();
+		} else if (user.contains("marriage") || user.contains("children") || user.contains("commit") || user.contains("forever") || user.contains("sacred") || user.contains("marry") || user.contains("married")) {
+			r.marriage();
+		} else if (user.contains("religious") || user.contains("holy") || user.contains("jesus") || user.contains("god") || user.contains("religion")) {
+			r.religion();
 		} else if (user.contains("ex")) {	
 			botSay("Stop talking to your " + su.appendIfMissing(user, " girlfriend/boyfriend") + ". There’s a reason why you aren’t together anymore." + "\n" + "Anything else?");
 		} else if (user.contains("likes me") || user.contains("like me")) {
 			r.like();
 		} else if (user.contains("first") || user.contains("date") || user.contains("where") || user.contains("out") || user.contains("eat") || user.contains("food") || user.contains("place") || user.contains("special")) {
 			r.first();
+		} else if (user.contains("money") || user.contains("finance") || user.contains("pay") || user.contains("cheap") || user.contains("expens")) {
+			r.money();
 		} else if (user.contains("gift") || user.contains("present")) {
 			g.whatMonth();
 		} else if (user.contains("ok") || user.contains("okay") || user.contains("thank you") || user.contains("thanks") || user.contains("oh") || user.contains("thx")) {
