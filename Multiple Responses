@@ -1,9 +1,10 @@
 public class Responses extends botLogic{
 
-	private int decider = (int) (Math.random() * 2 + 1);
+	private int decider;
 	
 	public void crush() {
-
+		 decider = (int) (Math.random() * 2 + 1);
+		
 		if (decider == 1) {
 			botSay("Don’t be afraid to approach them! The worst is rejection and you move on with life." + "\n" + "Anything else?");
 		} else if (decider == 2) {
@@ -11,6 +12,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void nervous() {
+		decider = (int) (Math.random() * 2 + 1);
 
 		if (decider == 1) {
 			botSay("It’s natural to be nervous when dating! Many people sweat a lot or mix up their words, especially around someone they like. Just be yourself!" + "\n" + "Anything else?");
@@ -19,6 +21,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void hurt() {
+		decider = (int) (Math.random() * 2 + 1);
 
 		if (decider == 1) {
 			botSay("Leave them behind! Nobody deserves to be treated like that." + "\n" + "Anything else?");
@@ -31,6 +34,7 @@ public class Responses extends botLogic{
 		botSay("Here is the number for the Pennsylvania Coalition Against Domestic Violence: 1-800-799-SAFE(7233). Please know that you do not have to stay in an unhealthy and potentially dangerous situation." + "\n" + "Anything else?");
 	}
 	public void murder() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("Looks like this chat might be too light for you. To talk about serious issues that are causing you pain, please make an appointment with a psychiatrist or go online to a service like betterhelp.com for assistance. " + "\n" + "Anything else?");
@@ -39,6 +43,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void improve() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("Communication is key." + "\n" +"Anything else?");
@@ -47,6 +52,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void horoscope() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("Relationships don’t work on magic crystal balls or what zodiac sign you are. They work on good old fashioned time and effort." + "\n" + "Anything else?");
@@ -55,6 +61,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void marriage() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("Proceed with caution! Serious relationships require a lot of commitment and are serious. Make sure you are comfortable with yourself first before jumping in." + "\n" + "Anything else?");
@@ -63,6 +70,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void religion() {
+		decider = (int) (Math.random() * 2 + 1);
 
 		if (decider == 1) {
 			botSay("If your religion means a great deal to you, try to find someone that shares those same values. Even if they do not believe in what you believe, what matters is that they are a good and thoughtful person." + "\n" + "Anything else?");
@@ -71,6 +79,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void like() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("They will most likely talk a lot or make lots of eye contact");
@@ -79,6 +88,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void first() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("Movies, Golf, Chipotle, Mall, Park, Walmart. Your choice." + "\n" + "Anything else?");
@@ -87,6 +97,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void money() {
+		decider = (int) (Math.random() * 2 + 1);
 
 		if (decider == 1) {
 			botSay("Split the bill on the first date! There are no rules about who is paying anymore because most people have jobs. Make sure you don’t expect the other person to pay and if they insist, say thank you!" + "\n" + "Anything else?");
@@ -95,6 +106,7 @@ public class Responses extends botLogic{
 		}
 	}
 	public void thanks() {
+		decider = (int) (Math.random() * 2 + 1);
 		
 		if (decider == 1) {
 			botSay("No problem!" + "\n" + "Anything else?");
