@@ -2,10 +2,16 @@ import java.util.*;
 import java.text.SimpleDateFormat;
 
 public class Gifts extends botLogic{
-	
+	/**
+	 * constructor
+	 */
 	public Gifts() {
 		
 	}
+	/**
+	 * formats current month
+	 * depending on what month it is is calls a certain season method
+	 */
 	public void whatMonth() {
 		SimpleDateFormat s = new SimpleDateFormat("MM");
 		Date d = new Date();
@@ -21,6 +27,9 @@ public class Gifts extends botLogic{
 			Winter();
 		}
 	}
+	/**
+	 * outputs a certain saying depending on what month it is
+	 */
 	public void Spring() {
 		botSay("Get him/her a nice lightweight T-Shirt");
 	}
