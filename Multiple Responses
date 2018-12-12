@@ -1,7 +1,14 @@
 public class Responses extends botLogic{
-
+	
+	/**
+	 * decider isn't assigned yet
+	 */
 	private int decider;
 	
+	/**
+	 * below are all of the responses the bot can display
+	 * the decider picks a random number and depending on the number, it outputs a certain saying
+	 */
 	public void crush() {
 		 decider = (int) (Math.random() * 2 + 1);
 		
@@ -114,6 +121,9 @@ public class Responses extends botLogic{
 			botSay("Sure." + "\n" + "Anything else?");
 		}
 	}
+	/**
+	 * if the user inputs something the bot cannot understand, there are 4 ways the bot can respond
+	 */
 	public void error() {
 		decider = (int) (Math.random() * 4 + 1);
 		
