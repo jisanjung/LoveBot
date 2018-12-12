@@ -5,23 +5,36 @@ public class botLogic {
 	Scanner s = new Scanner(System.in);
 	StringUtils su = new StringUtils();
 	
+	/**
+	 * constructor
+	 */
 	public botLogic() {
 		
 	}
+	/**
+	 * using "s" as a parameter, the lovebot displays this
+	 * @param s
+	 */
 	public void botSay(String s) {
 		
 		System.out.println("LoveBot: " + s);
 	}
+	/**
+	 * the main logic in the lovebot
+	 */
 	public void logic() {
+		/**
+		 * a greeting is presented as soon as this HiBye object is called
+		 */
 		HiBye hb = new HiBye();
 		Gifts g = new Gifts();
 		Responses r = new Responses();
 		
 		System.out.print("You: ");
-			String user = s.nextLine().toLowerCase();
+			String user = s.nextLine().toLowerCase(); //this makes the lovebot not case sensitive
 			hb.name(user);
 		
-		for(int i = 1; i > 0; i++) {
+		for(int i = 1; i > 0; i++) { //continually runs until the system is exited.
 		System.out.print("You: ");
 			user = s.nextLine().toLowerCase();
 			
