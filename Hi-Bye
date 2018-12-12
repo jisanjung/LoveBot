@@ -3,15 +3,29 @@ import org.apache.commons.lang3.StringUtils;
 public class HiBye extends botLogic{
 	StringUtils su = new StringUtils();
 	
+	/**
+	 * constructor
+	 * as soon as this object is made this is displayed, asking the user for their name
+	 */
 	public HiBye() {
 		System.out.println("LoveBot: Hello there. I’m your friendly assistant Love Bot and I give dating advice." + "\n" + "What is your first and last name?");
 	}
+	/**
+	 * using StringUtils, it grabs the user's name and displays the first name
+	 * @param s
+	 */
 	public void name(String s) {
 		botSay("Hello " + su.substringBeforeLast(s, " ") + ". How can I help you?");
 	}
+	/**
+	 * when a user inputs a greeting message, this is the output
+	 */
 	public void greet() {
 			botSay("Hey there! How can I help you?");
 	}
+	/**
+	 * when a user wants to end the chat, this is the output
+	 */
 	public void endChat() {
 		botSay("Goodbye!");
 		System.exit(0);
